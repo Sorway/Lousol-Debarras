@@ -1,0 +1,262 @@
+/* Variables et reset */
+:root {
+    --primary: #0f172a;
+    --secondary: #2563eb;
+    --dark: #1e293b;
+    --light: #f8fafc;
+    --gray: #64748b;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    color: var(--dark);
+    background: var(--light);
+}
+
+/* Header et Navigation */
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--dark);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: var(--transition);
+}
+
+.mobile-menu-btn:hover {
+    color: var(--primary);
+}
+
+.mobile-menu-btn.active {
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    transition: var(--transition);
+}
+
+.nav-links a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.nav-links a i {
+    font-size: 1.1rem;
+    transition: var(--transition);
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.nav-links a:hover i {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-1rem);
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 1rem;
+        width: 100%;
+        border-radius: 0.5rem;
+    }
+
+    .nav-links a:hover {
+        background: var(--light);
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .logo-img {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+/* Footer */
+footer {
+    background: #1c1c1c;
+    color: white;
+    padding: 4rem 2rem 2rem;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+    position: relative;
+}
+
+.footer-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    position: relative;
+}
+
+.footer-content h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    width: 50px;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 1px;
+}
+
+.footer-content p {
+    color: #9ca3af;
+    margin-bottom: 0.75rem;
+    transition: var(--transition);
+}
+
+.footer-content p:hover {
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    color: #9ca3af;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #333;
+    border-radius: 0.5rem;
+    transition: var(--transition);
+}
+
+.social-link:hover {
+    color: white;
+    border-color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    text-align: center;
+    color: #9ca3af;
+}
+
+footer .mail {
+    color: #9ca3af;
+}
+
+footer .mail:hover {
+    color: white;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

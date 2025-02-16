@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lousol Débarras - Accueil</title>
+
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/services.css">
+        <link rel="icon" type="image/png" href="/icons/logo.ico">
+    </head>
+    <body>
+        <!-- Header -->
+        <%- include('partials/header') %>
+
+        <!-- Main section -->
+        <main class="services-page">
+            <section class="services-hero">
+                <div class="services-hero-content">
+                    <h1>Nos Services de Débarras</h1>
+                    <p>Des solutions professionnelles adaptées à tous vos besoins</p>
+                </div>
+            </section>
+
+            <section class="services-grid">
+                <div class="service-card premium">
+                    <div class="service-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h2>Débarras Gratuit</h2>
+                    <div class="service-content">
+                        <p class="service-description">Nous prenons en charge le débarras de vos meubles, objets ou équipements divers, à condition qu'ils soient en bon état. Lors d'un rendez-vous, nous effectuons une évaluation précise de la valeur de vos biens. Si la valeur de revente de ces derniers couvre les frais d'enlèvement, le débarras est entièrement gratuit pour vous.</p>
+                        <div class="service-features">
+                            <h3>Ce service comprend :</h3>
+                            <ul class="benefits">
+                                <li><i class="fas fa-check"></i> Évaluation gratuite sur place</li>
+                                <li><i class="fas fa-check"></i> Estimation de la valeur des biens</li>
+                                <li><i class="fas fa-check"></i> Débarras sans frais si valeur suffisante</li>
+                                <li><i class="fas fa-check"></i> Tri et recyclage responsable</li>
+                            </ul>
+                        </div>
+                        <a href="/contact" class="service-cta">Demander un devis</a>
+                    </div>
+                </div>
+
+                <div class="service-card professional">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-loading"></i>
+                    </div>
+                    <h2>Enlèvement d'Encombrants</h2>
+                    <div class="service-content">
+                        <p class="service-description">Vous souhaitez libérer de l'espace sans lever le petit doigt ? Cette solution est faite pour vous ! Nous prenons en charge le débarras de vos encombrants en toute simplicité. Lors d'un rendez-vous, nous établissons un devis précis en fonction de la superficie à vider et de la quantité d'objets à évacuer vers une déchetterie.</p>
+                        <div class="service-features">
+                            <h3>Ce service comprend :</h3>
+                            <ul class="benefits">
+                                <li><i class="fas fa-check"></i> Devis personnalisé gratuit</li>
+                                <li><i class="fas fa-check"></i> Intervention rapide sous 24/48h</li>
+                                <li><i class="fas fa-check"></i> Équipe professionnelle qualifiée</li>
+                                <li><i class="fas fa-check"></i> Évacuation vers centre agréé</li>
+                            </ul>
+                        </div>
+                        <a href="/contact" class="service-cta">Demander un devis</a>
+                    </div>
+                </div>
+
+                <div class="service-card special">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-dollar"></i>
+                    </div>
+                    <h2>Rachat d'Objets</h2>
+                    <div class="service-content">
+                        <p class="service-description">Vous souhaitez vous séparer d'un objet ayant une certaine valeur ? Nous sommes à votre disposition pour l'évaluer avec précision et vous le racheter au prix juste. Une solution simple et rapide pour désencombrer tout en bénéficiant d'un revenu supplémentaire !</p>
+                        <div class="service-features">
+                            <h3>Ce service comprend :</h3>
+                            <ul class="benefits">
+                                <li><i class="fas fa-check"></i> Évaluation professionnelle</li>
+                                <li><i class="fas fa-check"></i> Prix du marché garanti</li>
+                                <li><i class="fas fa-check"></i> Paiement comptant</li>
+                                <li><i class="fas fa-check"></i> Enlèvement gratuit</li>
+                            </ul>
+                        </div>
+                        <a href="/contact" class="service-cta">Faire estimer mes objets</a>
+                    </div>
+                </div>
+
+                <div class="service-card transport">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h2>Transport</h2>
+                    <div class="service-content">
+                        <p class="service-description">Nous offrons un service de transport pour le déplacement de vos objets volumineux, nécessitant un camion, d'un point A à un point B.</p>
+                        <div class="service-features">
+                            <h3>Ce service comprend :</h3>
+                            <ul class="benefits">
+                                <li><i class="fas fa-check"></i> Camion adapté à vos besoins</li>
+                                <li><i class="fas fa-check"></i> Transport sécurisé et soigné</li>
+                                <li><i class="fas fa-check"></i> Service rapide et efficace</li>
+                                <li><i class="fas fa-check"></i> Équipe professionnelle</li>
+                            </ul>
+                        </div>
+                        <a href="/contact" class="service-cta">Demander un devis</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service-process">
+                <h2>Notre Processus d'Intervention</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>1. Contact</h3>
+                        <p>Appelez-nous ou remplissez notre formulaire en ligne pour une première évaluation.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="fas fa-clipboard-list"></i>
+                        </div>
+                        <h3>2. Évaluation</h3>
+                        <p>Nous effectuons une visite gratuite pour établir un devis précis.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3>3. Planification</h3>
+                        <p>Nous convenons ensemble d'une date d'intervention qui vous convient.</p>
+                    </div>
+
+                    <div class="process-step">
+                        <div class="step-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>4. Réalisation</h3>
+                        <p>Notre équipe intervient rapidement et efficacement pour le débarras.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="quote-section">
+                <div class="quote-content">
+                    <h2>Besoin d'un Devis ?</h2>
+                    <p>Contactez-nous dès maintenant pour une évaluation gratuite de votre projet</p>
+                    <a href="/contact" class="quote-cta">Demander un Devis</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <%- include('partials/footer') %>
+
+        <!-- Importation des scripts -->
+        <script src="https://kit.fontawesome.com/629c3eb82b.js" crossorigin="anonymous"></script>
+        <script src="./javascript/navigation.js" crossorigin="anonymous"></script>
+    </body>
+</html>
