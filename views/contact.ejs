@@ -50,7 +50,13 @@
                         <h2>Formulaire de Contact</h2>
                         <p class="form-subtitle">Remplissez le formulaire ci-dessous pour nous contacter</p>
 
-                        <form class="contact-form">
+                        <% if (message) { %>
+                            <div class="alert alert-<%= message.type %>">
+                                <%= message.text %>
+                            </div>
+                        <% } %>
+
+                        <form class="contact-form" method="POST" action="/contact">
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="name">Nom complet *</label>
