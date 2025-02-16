@@ -8,6 +8,11 @@
     text-align: center;
     color: white;
     padding: 0 2rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url('https://lousol-debarras-06.fr/images/index-banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero::before {
@@ -17,12 +22,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--secondary);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url('https://lousol-debarras-06.fr/images/index-banner.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     z-index: -1;
 }
 
