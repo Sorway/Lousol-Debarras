@@ -194,7 +194,7 @@ footer {
     bottom: -0.5rem;
     width: 50px;
     height: 2px;
-    background: var(--primary);
+    background: var(--secondary);
     border-radius: 1px;
 }
 
