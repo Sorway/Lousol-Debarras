@@ -17,11 +17,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url('https://lousol-debarras-06.fr/images/index-banner.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url('https://lousol-debarras-06.fr/images/index-banner.jpeg') fixed center;
     z-index: -1;
 }
 
