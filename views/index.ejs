@@ -61,11 +61,11 @@
                     <div class="realisation-card">
                         <div class="realisation-images">
                             <div class="image-container">
-                                <img src="./images/works/1/before.jpg" alt="Avant débarras">
+                                <img src="./images/works/1/before.jpg" alt="Avant débarras" class="realisation-img" data-type="before">
                                 <div class="image-label">Avant</div>
                             </div>
                             <div class="image-container">
-                                <img src="./images/works/1/after.jpg" alt="Après débarras">
+                                <img src="./images/works/1/after.jpg" alt="Après débarras" class="realisation-img" data-type="after">
                                 <div class="image-label">Après</div>
                             </div>
                         </div>
@@ -85,12 +85,12 @@
                     <div class="realisation-card">
                         <div class="realisation-images">
                             <div class="image-container">
-                                <img src="./images/works/2/before.jpg" alt="Avant débarras">
+                                <img src="./images/works/2/before.jpg" alt="Avant débarras" class="realisation-img" data-type="before">
                                 <div class="image-label">Avant</div>
                             </div>
 
                             <div class="image-container">
-                                <img src="./images/works/2/after.jpg" alt="Après débarras">
+                                <img src="./images/works/2/after.jpg" alt="Après débarras" class="realisation-img" data-type="after">
                                 <div class="image-label">Après</div>
                             </div>
                         </div>
@@ -110,12 +110,12 @@
                     <div class="realisation-card">
                         <div class="realisation-images">
                             <div class="image-container">
-                                <img src="./images/works/3/before.jpg" alt="Avant débarras">
+                                <img src="./images/works/3/before.jpg" alt="Avant débarras" class="realisation-img" data-type="before">
                                 <div class="image-label">Avant</div>
                             </div>
 
                             <div class="image-container">
-                                <img src="./images/works/3/after.jpg" alt="Après débarras">
+                                <img src="./images/works/3/after.jpg" alt="Après débarras" class="realisation-img" data-type="after">
                                 <div class="image-label">Après</div>
                             </div>
                         </div>
@@ -135,12 +135,12 @@
                     <div class="realisation-card">
                         <div class="realisation-images">
                             <div class="image-container">
-                                <img src="./images/works/4/before.jpg" alt="Avant débarras">
+                                <img src="./images/works/4/before.jpg" alt="Avant débarras" class="realisation-img" data-type="before">
                                 <div class="image-label">Avant</div>
                             </div>
 
                             <div class="image-container">
-                                <img src="./images/works/4/after.jpg" alt="Après débarras">
+                                <img src="./images/works/4/after.jpg" alt="Après débarras" class="realisation-img" data-type="after">
                                 <div class="image-label">Après</div>
                             </div>
                         </div>
@@ -160,12 +160,12 @@
                     <div class="realisation-card">
                         <div class="realisation-images">
                             <div class="image-container">
-                                <img src="./images/works/5/before.jpg" alt="Avant débarras">
+                                <img src="./images/works/5/before.jpg" alt="Avant débarras" class="realisation-img" data-type="before">
                                 <div class="image-label">Avant</div>
                             </div>
 
                             <div class="image-container">
-                                <img src="./images/works/5/after.jpg" alt="Après débarras">
+                                <img src="./images/works/5/after.jpg" alt="Après débarras" class="realisation-img" data-type="after">
                                 <div class="image-label">Après</div>
                             </div>
                         </div>
@@ -185,11 +185,27 @@
             </section>
         </main>
 
+        <!-- Modal pour les images -->
+        <div class="image-modal">
+            <div class="modal-content">
+                <button class="modal-close"><i class="fas fa-times"></i></button>
+                <div class="modal-image-container">
+                    <img src="" alt="" class="modal-image">
+                    <div class="modal-label"></div>
+                </div>
+                <div class="modal-navigation">
+                    <button class="nav-button prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="nav-button next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
         <%- include('partials/footer') %>
 
         <!-- Importation des scripts -->
         <script src="https://kit.fontawesome.com/629c3eb82b.js" crossorigin="anonymous"></script>
         <script src="./javascript/navigation.js" crossorigin="anonymous"></script>
+        <script src="./javascript/modal.js" crossorigin="anonymous"></script>
     </body>
 </html>
